@@ -1,8 +1,12 @@
 //renda mensal do aluno, em centavos.
-const rendaMensalEmCentavos = 300000;
-
-// Tempo decorrido de contrato. Se for maior que 60 meses, o aluno não deve mais nada.
+const rendaMensalEmCentavos = 300_000;
 const mesesDecorridos = 12;
+const totalJaPagoPeloAluno = 1_000_000;
 
-// Soma das parcelas já pagas pelo aluno nos meses anteriores (em centavos). Se for igual a 18 mil reais, o aluno não deve pagar mais nada, pois já quitou a dívida.
-const totalJaPagoPeloAluno = 1000000;
+
+if (rendaMensalEmCentavos > 200000 && mesesDecorridos < 60 && totalJaPagoPeloAluno <= 1800000) {
+    const valorDaParcela = (rendaMensalEmCentavos * 18 / 100) / 100;
+    console.log(`O valor a pagar pelo aluno é de R$ ${valorDaParcela}`);
+} else {
+    console.log("Esse mês o aluno não pagara a parcela");
+}
