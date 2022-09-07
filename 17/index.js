@@ -1,8 +1,11 @@
-//valor do produto comprado.
-const valorDoProduto = 100000;
-
-//quantidade de parcelas
+const valorDoProduto = 100_000;
 const quantidadeDoParcelamento = 10;
-
-//valor pago
 const valorPago = 300;
+
+if (valorDoProduto && valorPago) {
+    const saldoDevedor = (valorDoProduto / 100) - valorPago;
+    const valorDasParcelas = (valorDoProduto / 100) / quantidadeDoParcelamento;
+    const parcelasAPagar = saldoDevedor / valorDasParcelas;
+
+    console.log(`Faltam ${parcelasAPagar} parcelas que corresponde R$ ${saldoDevedor}`);
+}
