@@ -16,11 +16,3 @@ if (tipoDePagamento === "credito") {
 
     console.log(`o valor final é R$ ${(valorFinal / 100).toFixed(2)}`);
 }
-
-//cheque	3%
-//debito ou dinheiro	10%
-//Faça um programa que verifica o tipo de desconto,
-// calcule o valor do produto com o desconto e imprima o
-//resultado. O valor final do produto após o desconto pode ser
-//encontrado com a fórmula:
-// valorFinal = valorDoProduto - (valorDoProduto \* desconto)$$
