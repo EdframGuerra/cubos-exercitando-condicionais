@@ -22,4 +22,3 @@ if (ladoA !== ladoB) {
         console.log("bucha não éxiste")
     }
 }
-
