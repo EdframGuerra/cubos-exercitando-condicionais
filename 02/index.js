@@ -3,7 +3,7 @@ const jogada2 = 3;
 
 if (jogada1 && jogada2) {
     const soma = jogada1 + jogada2;
-    const numero = soma
+    const numero = soma;
 
     {
         if (numero % 2 === 0) {
