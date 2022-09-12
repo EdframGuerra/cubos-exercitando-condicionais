@@ -2,6 +2,7 @@ const primeiroNome = "Mario";
 const sobrenome = "Bross";
 const apelido = "";
 
+
 if (apelido) {
     console.log(apelido);
 
