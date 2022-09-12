@@ -1,19 +1,27 @@
-const diaDaSemana = 8;
+const diaDaSemana = 3;
 
 if (diaDaSemana === 1) {
-    console.log("segunda");
+    console.log("segunda-feira");
+
 } else if (diaDaSemana === 2) {
-    console.log("terça");
+    console.log("terça-feira");
+
 } else if (diaDaSemana === 3) {
-    console.log("quarta");
+    console.log("quarta-feira");
+
 } else if (diaDaSemana === 4) {
-    console.log("quinta");
+    console.log("quinta-feira");
+
 } else if (diaDaSemana === 5) {
-    console.log("sexta");
+    console.log("sexta-feira");
+
 } else if (diaDaSemana === 6) {
     console.log("sabado");
+
 } else if (diaDaSemana === 7) {
     console.log("domingo");
+
 } else if (diaDaSemana < 1 || diaDaSemana > 7) {
+
     console.log("O dia da semana informado não é válido");
 }
